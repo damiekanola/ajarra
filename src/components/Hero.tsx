@@ -3,9 +3,9 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <section className=" space-y-12">
-      <div className=" flex items-center w-[95%] mx-auto gap-8 justify-between">
-        <div className=" space-y-6">
-          <h2 className=" text-3xl break-words font-bold merriweather">
+      <div className="flex items-center w-[95%] mx-auto gap-12 justify-between ">
+        <div className=" space-y-6 ">
+          <h2 className=" text-4xl break-words font-bold merriweather">
             Seamless Event Management & Vendor Connections
           </h2>
           <p className=" text-lg mulish break-words">
@@ -23,25 +23,25 @@ const Hero = () => {
           </div>
         </div>
         <div>
-          <div className=" overflow-hidden rounded-t-full border w-[400px] h-[500px]">
+          <div className=" overflow-hidden rounded-t-full border border-[#572514] w-[480px] h-[600px] flex-2">
             <Image
               src={"/center.jpg"}
               alt="center"
               width={400}
               height={600}
-              className=" p-4 rounded-t-full h-full w-full object-cover"
+              className=" pt-9 pb-8 px-7 rounded-t-full h-full w-full object-cover"
             />
           </div>
         </div>
 
-        <div className=" space-y-4">
-          <div className="rounded-4xl overflow-hidden border border-[#424142]">
+        <div className=" space-y-4 w-fit shrink-0">
+          <div className="rounded-4xl overflow-hidden border border-[#424142] w-fit">
             <Image src={"/hero1.jpg"} alt="hero" width={200} height={250} />
           </div>
-          <div className="rounded-4xl overflow-hidden border border-[#424142]">
+          <div className="rounded-4xl overflow-hidden border border-[#424142] w-fit">
             <Image src={"/hero3.jpg"} alt="hero" width={200} height={250} />
           </div>
-          <div className="rounded-4xl overflow-hidden border border-[#424142]">
+          <div className="rounded-4xl overflow-hidden border border-[#424142] w-fit">
             <Image src={"/hero2.jpg"} alt="hero" width={200} height={250} />
           </div>
         </div>

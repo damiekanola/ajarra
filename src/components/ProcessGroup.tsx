@@ -21,7 +21,7 @@ const ProcessGroup = ({
   reverse,
 }: ProcessGroupProps) => {
   return (
-    <article className={`flex items-center gap-20 justify-between ${reverse ? "flex-row-reverse" : ""}`}>
+    <article className={`flex flex-col md:flex-row items-center gap-20 justify-between ${reverse ? "flex-row-reverse" : ""}`}>
       <div className=" relative">
         <Image
           src={"/pattern.svg"}
@@ -74,7 +74,7 @@ const ProcessGroup = ({
             ))}
           </ul>
 
-          <button className=" bg-[#5E2D1F] text-white rounded-3xl flex items-center justify-center px-5 py-3">
+          <button className=" bg-[#5E2D1F] text-white rounded-3xl flex items-center justify-center px-5 py-3 ml-10">
             {buttonText}
           </button>
         </div>

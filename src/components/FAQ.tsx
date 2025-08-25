@@ -36,25 +36,27 @@ const FAQ = () => {
   return (
     <section className=" space-y-8 my-12">
       <header className=" text-center space-y-6">
-        <h2 className=" font-bold text-3xl">Frequently Asked Questions</h2>
-        <p className=" text-xl">
+        <h2 className=" font-bold text-2xl md:text-3xl">Frequently Asked Questions</h2>
+        <p className=" md:text-xl text-base">
           Get answers to common questions about Ajara event maarket place.
         </p>
       </header>
 
-      <article className=" space-y-5 w-[70%] mx-auto">
+      <article className=" space-y-5 w-[80%] md:w-[70%] mx-auto">
         {questions.map((question) => (
           <div
             key={question.id}
-            className={` bg-[#F3E9E2] space-y-3 px-5 py-3 ${
+            className={` bg-[#F3E9E2] space-y-3  ${
               active === question.id
                 ? "bg-[#FBF8F6] rounded-3xl"
                 : "bg-[#F3E9E2] rounded-full"
             }`}
             onClick={() => setActive(question.id)}
           >
-            <div className=" flex justify-between items-center">
-              <p className=" font-semibold text-xl">{question.question}</p>
+            <div className="px-5 py-3">
+
+            <div className=" flex justify-between items-center gap-1">
+              <p className=" font-semibold md:text-xl text-base">{question.question}</p>
               <Image
                 src={`${active === question.id ? "/close.svg" : "/add.svg"}`}
                 alt="add"
@@ -64,12 +66,13 @@ const FAQ = () => {
               />
             </div>
             <p
-              className={`font-light ${
+              className={`font-light text-sm md:text-base ${
                 active === question.id ? "block" : "hidden"
               }`}
             >
               {question.answer}
             </p>
+            </div>
           </div>
         ))}
       </article>

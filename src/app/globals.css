@@ -15,3 +15,8 @@ h2 {
 p {
   font-family: 'Mulish';
 }
+
+button {
+  font-family: 'Mulish';
+  font-weight: 600;
+}

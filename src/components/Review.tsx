@@ -10,7 +10,7 @@ const Review = () => {
         height={120}
         className=" rounded-[100%] aspect-square object-cover bg-[#F9F4F1] p-1.5 -mr-12 z-20"
       />
-      <div className=" space-y-3 bg-[#F9F4F1] rounded-3xl p-7 w-1/3 pl-20">
+      <div className=" space-y-3 bg-[#F9F4F1] rounded-3xl p-7 pl-20">
         <p className=" font-light">
           Ajarra transformed our annual conference planning process. The vendor
           connections saved us countless hours of research and negotiations.
