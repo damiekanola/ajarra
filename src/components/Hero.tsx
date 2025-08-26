@@ -6,11 +6,11 @@ const Hero = () => {
       <div className="flex flex-col md:flex-row px-4 items-center justify-between gap-5">
         <div className=" flex flex-col md:flex-row items-center gap-5">
           <div className=" space-y-6 flex-1">
-            <h2 className=" text-4xl lg:text-5xl break-words font-bold merriweather">
+            <h2 className=" text-5xl break-words font-bold merriweather">
               Seamless Event Management & Vendor Connections
             </h2>
 
-            <p className=" text-lg lg:text-xl mulish break-words">
+            <p className=" text-xl mulish break-words">
               Your one-stop platform for planning events and finding premium
               vendors. Streamline your event planning process from start to
               finish.
@@ -34,45 +34,15 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="flex-2 relative w-full h-full">
-            <div className="lg:h-[600px] md:h-[500px] sm:h-[400px]">
 
+          <div className=" flex-2 relative">
             <Image
-              src={"/center.jpg"}
+              src={"/hero.png"}
               alt="center"
               width={436}
               height={610}
-              className=" border  p-2 md:w-[400px] sm:p-4 md:p-6 lg:p-8 border-[#572514]  mx-auto h-full overflow-hidden rounded-t-full object-cover"
+              className=" border-[#572514] h-full w-full object-cover"
             />
-            </div>
-
-            <div className="z-10 absolute left-0 bottom-[20%] text-xs md:text-sm bg-[#FFFFFFCC] border rounded-lg w-1/2 p-3 md:p-5 flex items-center justify-between gap-3">
-              <div className="relative w-6 h-6 rounded-full overflow-hidden shrink-0 hidden sm:block">
-                <Image
-                  src={"/test1.jpg"}
-                  alt="test"
-                  fill
-                  className=" object-cover"
-                />
-              </div>
-              <p>Event planning just got less stressful.</p>
-            </div>
-
-            <div className=" z-10 right-0 bottom-[50%] text-xs w-1/2 md:text-sm absolute bg-[#FFFFFFCC] border rounded-lg  p-3 md:p-5 flex items-center justify-between gap-2">
-              <div className=" relative w-6 h-6 rounded-full overflow-hidden shrink-0 hidden sm:block">
-                <Image
-                  src={"/test2.jpg"}
-                  alt="test"
-                  fill
-                  className=" object-cover"
-                />
-              </div>
-              <p>
-                As a vendor, I can easily get clients and manage my bookings
-                effortlessly.
-              </p>
-            </div>
-
 
           </div>
 

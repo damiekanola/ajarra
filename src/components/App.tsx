@@ -33,7 +33,7 @@ const App = () => {
         alt="group"
         width={200}
         height={200}
-        className=" flex-1 h-full w-full"
+        className=" flex-1"
       />
     </section>
   );

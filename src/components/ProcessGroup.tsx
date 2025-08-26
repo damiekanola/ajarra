@@ -28,7 +28,7 @@ const ProcessGroup = ({
           alt="pattern"
           width={150}
           height={200}
-          className="absolute -top-6"
+          className={`absolute top-0 ${reverse && " right-20"}`}
         />
         <div className="relative md:h-[500px] md:w-[420px] z-20 h-[300px] w-[280px]">
           <Image
@@ -43,7 +43,7 @@ const ProcessGroup = ({
           alt="pattern"
           width={150}
           height={200}
-          className=" absolute bottom-0 right-10"
+          className={`absolute bottom-0 ${ reverse ? "left-0" : "right-10"}`}
         />
       </div>
 

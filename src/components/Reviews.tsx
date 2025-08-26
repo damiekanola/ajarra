@@ -1,5 +1,5 @@
 import Review from "./Review";
-import Marquee from "react-fast-marquee";
+
 
 const reviews = [
   {

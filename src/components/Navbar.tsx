@@ -19,7 +19,7 @@ const Navbar = () => {
         <HiOutlineMenuAlt3 size={30} />
       </button>
 
-      <ul className="items-center mulish justify-between gap-2 hidden md:flex">
+      <ul className="items-center mulish justify-between gap-3 hidden md:flex">
         {navLinks.map((link) => (
           <li
             key={link}
