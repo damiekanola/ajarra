@@ -21,8 +21,8 @@ const ProcessGroup = ({
   reverse,
 }: ProcessGroupProps) => {
   return (
-    <article className={`flex flex-col md:flex-row items-center gap-20 justify-between ${reverse ? "flex-row-reverse" : ""}`}>
-      <div className=" relative">
+    <article className={`flex flex-col md:flex-row items-center gap-20 justify-between ${reverse ? "md:flex-row-reverse" : ""}`}>
+      <div className=" relative flex-1">
         <Image
           src={"/pattern.svg"}
           alt="pattern"
@@ -30,7 +30,7 @@ const ProcessGroup = ({
           height={200}
           className="absolute -top-6"
         />
-        <div className="relative h-[500px] w-[420px] z-20">
+        <div className="relative md:h-[500px] md:w-[420px] z-20 h-[300px] w-[280px]">
           <Image
             src={imageSrc}
             alt="planners"
@@ -43,11 +43,11 @@ const ProcessGroup = ({
           alt="pattern"
           width={150}
           height={200}
-          className=" absolute bottom-0 -right-4"
+          className=" absolute bottom-0 right-10"
         />
       </div>
 
-      <div className=" space-y-4 w-fit">
+      <div className=" space-y-4 w-fit flex-1">
         <h3 className=" font-bold text-4xl text-center merriweather">
           For Event {title}
         </h3>

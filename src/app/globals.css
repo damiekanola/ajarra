@@ -19,4 +19,5 @@ p {
 button {
   font-family: 'Mulish';
   font-weight: 600;
+  border-radius: 30px ;
 }

@@ -48,7 +48,7 @@ const vendorSteps = [
 
 const Process = () => {
   return (
-    <section className=" bg-[#F9F4F1] px-10 py-5 space-y-12">
+    <section className=" bg-[#F9F4F1] px-5 md:px-10 py-5 space-y-12">
       <header className=" text-center space-y-3">
         <h2 className=" merriweather font-bold text-3xl">How It Works</h2>
         <p className=" mulish">

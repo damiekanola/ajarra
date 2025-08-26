@@ -51,8 +51,11 @@ const Services = () => {
             Get Started
           </button>
         </div>
-        <div className=" flex-1">
-          <Image src={"/elipse.svg"} alt="elipse" width={300} height={300} />
+        <div className=" flex-1 relative">
+          <div className=" absolute inset-0 z-0">
+            <Image src={"/elipse.svg"} alt="elipse" width={600} height={600} className=" z-0"/>
+          </div>
+          <Image src={"/solutions.png"} alt="elipse" width={600} height={300} className=" relative z-20" />
         </div>
       </article>
     </section>

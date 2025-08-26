@@ -1,23 +1,22 @@
 import Image from "next/image";
 
-const Review = () => {
+const Review = ({ name, review, role, img}) => {
   return (
-    <article className=" mt-6 flex items-center relative w-fit">
+    <article className=" mt-6 flex items-center relative w-full">
       <Image
-        src={"/sarah.jpg"}
+        src={img}
         alt="sarah"
-        width={120}
-        height={120}
+        width={60}
+        height={80}
         className=" rounded-[100%] aspect-square object-cover bg-[#F9F4F1] p-1.5 -mr-12 z-20"
       />
-      <div className=" space-y-3 bg-[#F9F4F1] rounded-3xl p-7 pl-20">
-        <p className=" font-light">
-          Ajarra transformed our annual conference planning process. The vendor
-          connections saved us countless hours of research and negotiations.
+      <div className=" space-y-3 bg-[#F9F4F1] rounded-3xl p-3 pl-14">
+        <p className=" font-light text-xs md:text-base">
+          {review}
         </p>
         <div className="space-y-1">
-          <p className=" font-bold  text-sm ">Sarah Johnson</p>
-          <p className=" font-light text-xs">Event Director, TechCorp</p>
+          <p className=" font-[800] text-sm ">{name}</p>
+          <p className=" font-light text-xs">{role}</p>
         </div>
       </div>
     </article>

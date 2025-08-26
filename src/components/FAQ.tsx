@@ -32,7 +32,7 @@ const questions = [
 ];
 
 const FAQ = () => {
-  const [active, setActive] = useState(1);
+  const [active, setActive] = useState(0);
   return (
     <section className=" space-y-8 my-12">
       <header className=" text-center space-y-6">
@@ -42,7 +42,7 @@ const FAQ = () => {
         </p>
       </header>
 
-      <article className=" space-y-5 w-[80%] md:w-[70%] mx-auto">
+      <article className=" space-y-5 w-[90%] md:w-[70%] mx-auto">
         {questions.map((question) => (
           <div
             key={question.id}
@@ -62,7 +62,8 @@ const FAQ = () => {
                 alt="add"
                 width={24}
                 height={24}
-                className=" bg-white p-1 rounded-full"
+                  className=" bg-white p-1 rounded-full"
+                
               />
             </div>
             <p
