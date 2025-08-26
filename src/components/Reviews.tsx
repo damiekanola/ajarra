@@ -39,7 +39,7 @@ const Reviews = () => {
         </p>
       </header>
     
-        <div className="flex flex-col lg:flex-row items-center justify-between md:gap-10 gap-3">
+        <div className="flex flex-col lg:flex-row items-center lg:items-stretch justify-between md:gap-10 gap-3">
           {reviews.map((review) => (
             <Review
               key={review.id}

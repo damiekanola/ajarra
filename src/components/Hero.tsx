@@ -6,9 +6,9 @@ const Hero = () => {
       <div className="flex flex-col md:flex-row px-4 items-center justify-between gap-5">
         <div className=" flex flex-col md:flex-row items-center gap-5">
           <div className=" space-y-6 flex-1">
-            <h2 className=" text-5xl break-words font-bold merriweather">
+            <h1 className=" text-5xl break-words font-bold merriweather">
               Seamless Event Management & Vendor Connections
-            </h2>
+            </h1>
 
             <p className=" text-xl mulish break-words">
               Your one-stop platform for planning events and finding premium
@@ -34,19 +34,16 @@ const Hero = () => {
             </div>
           </div>
 
-
           <div className=" flex-2 relative">
             <Image
               src={"/hero.png"}
               alt="center"
               width={436}
               height={610}
+              priority
               className=" border-[#572514] h-full w-full object-cover"
             />
-
           </div>
-
-
         </div>
 
         <div className=" hidden md:flex space-y-4 w-full md:w-fit shrink-0 flex-row justify-between item-center md:flex-col">
@@ -74,8 +71,6 @@ const Hero = () => {
             className="  max-w-[200px] w-[120px] h-auto rounded-4xl lg:w-[200px]  overflow-hidden border border-[#424142] "
           />
         </div>
-
-
       </div>
 
       <div className=" bg-[#F9F4F1]">

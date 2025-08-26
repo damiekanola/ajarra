@@ -22,6 +22,7 @@ const Review = ({ name, review, role, img }: ReviewProps) => {
         <div className="space-y-1">
           <p className=" font-[800] text-sm ">{name}</p>
           <p className=" font-light text-xs">{role}</p>
+          <Image src={"/stars.svg"} width={130} height={24} alt="stars" />
         </div>
       </div>
     </article>
