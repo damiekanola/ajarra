@@ -16,7 +16,7 @@ const Hero = () => {
               finish.
             </p>
 
-            <div className=" flex items-stretch gap-3 text-black font-bold text-xs">
+            <div className=" flex items-stretch gap-3 text-black font-bold text-xs md:text-base">
               <button className=" flex-1 bg-[#D9B8A3] md:pl-6 md:pr-3 md:py-2 rounded-4xl p-2 flex items-center justify-between gap-3">
                 Get Started
                 <div className=" bg-[#F3E9E2] rounded-full p-2 flex items-center justify-center">
@@ -28,7 +28,7 @@ const Hero = () => {
                   />
                 </div>
               </button>
-              <button className=" border-[#F9F4F1] md:px-8 md:py-4 border bg-[#F3E9E2] p-4 rounded-4xl flex-1 ">
+              <button className=" flex items-center justify-center border-[#F9F4F1] md:px-8 md:py-4 border bg-[#F3E9E2] p-4 rounded-4xl flex-1 ">
                 Get The App
               </button>
             </div>
